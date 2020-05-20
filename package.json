@@ -4,6 +4,10 @@
   "description": "My Personal Icon Font",
   "author": "jinyaoMa",
   "license": "ISC",
+  "scripts": {
+    "build": "node generate.js",
+    "server": "node server.js"
+  },
   "dependencies": {
     "font-carrier": "^0.2.0"
   }
