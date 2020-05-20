@@ -1,0 +1,10 @@
+{
+  "name": "icon-lib",
+  "version": "1.0.0",
+  "description": "My Personal Icon Font",
+  "author": "jinyaoMa",
+  "license": "ISC",
+  "dependencies": {
+    "font-carrier": "^0.2.0"
+  }
+}
