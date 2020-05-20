@@ -9,11 +9,11 @@ const cssTemplatePath = './src/template.css';
 
 const htmlTemplatePath = './src/template.html';
 
-const targetFontsPath = './build/font/font-mustom';
+const targetFontsPath = './docs/font/font-mustom';
 
-const targetCssPath = './build/css/font-mustom.css';
+const targetCssPath = './docs/css/font-mustom.css';
 
-const targetHtmlPath = './build/index.html';
+const targetHtmlPath = './docs/index.html';
 
 const fontFamilyClass = 'fm';
 
