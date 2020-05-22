@@ -16,7 +16,7 @@ http.createServer().on('request', function (req, res) {
         }
       })
     } else if (req.url.includes('font-mustom')) {
-      fs.readFile('./docs' + req.url, function (err, data) {
+      fs.readFile('.' + req.url.replace('/icon-lib', '/docs'), function (err, data) {
         if (err) {
           res.end('ERROR')
         } else {
