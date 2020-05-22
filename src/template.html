@@ -1,26 +1,24 @@
 <html><head><link rel="stylesheet" href="/icon-lib/css/font-mustom.css">
 <style>
-  .container { display: flex; flex-flow: wrap; justify-content: flex-start; padding-bottom: 0.5em; margin: 0 auto; max-width: 1414px; }
-  .icon { text-align: center; padding: 0 1em; }
+  div { box-sizing: border-box; }
+  .container { display: grid; padding-bottom: 0.5em; margin: 0 auto; max-width: 1280px; }
+  .icon { text-align: center; padding: 0 0.5em; color: black; background-color: white; border-radius: 0.5em; margin: 0.5em; }
   .icon i { font-size: 2em; margin: 0.5em 1em 0; }
   .icon span { display: block; line-height: 2; }
   @media screen and (min-width: 233px) {
-    .icon { width: 100%; }
+    .container { grid-template-columns: 100%; }
   }
   @media screen and (min-width: 466px) {
-    .icon { width: 50%; }
+    .container { grid-template-columns: 50% 50%; }
   }
   @media screen and (min-width: 699px) {
-    .icon { width: calc(100% / 3); }
+    .container { grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3); }
   }
   @media screen and (min-width: 932px) {
-    .icon { width: calc(100% / 4); }
+    .container { grid-template-columns: 25% 25% 25% 25%; }
   }
   @media screen and (min-width: 1165px) {
-    .icon { width: calc(100% / 5); }
-  }
-  @media screen and (min-width: 1398px) {
-    .icon { width: calc(100% / 6); }
+    .container { grid-template-columns: 20% 20% 20% 20% 20%; }
   }
 </style>
 </head><body><div class="container"><!--MUSTOM--></div></body></html>
