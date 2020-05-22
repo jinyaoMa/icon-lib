@@ -1,1 +1,25 @@
-@font-face{font-family:"font-mustom";src:url("/font/font-mustom.eot");src:url("/font/font-mustom.eot?#iefix") format("embedded-opentype"),url("/font/font-mustom.woff") format("woff2"),url("/font/font-mustom.woff") format("woff"),url("/font/font-mustom.ttf") format("truetype"),url("/font/font-mustom.svg#font-mustom") format("svg")}.fm{font-family:"font-mustom";font-style:normal}.fm-bar:before{content:'\78'}
+@font-face {
+  font-family: "font-mustom";
+  src: url("/font/font-mustom.eot");
+  src: url("/font/font-mustom.eot?#iefix") format("embedded-opentype"),
+    url("/font/font-mustom.woff") format("woff2"),
+    url("/font/font-mustom.woff") format("woff"),
+    url("/font/font-mustom.ttf") format("truetype"),
+    url("/font/font-mustom.svg#font-mustom") format("svg");
+}
+.fm {
+  font-family: "font-mustom";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fm-fh {
+  width: 1.25em;
+  height: 1.25em;
+  line-height: 1.25em;
+}
+.fm-bars:before{content:'\78'}.fm-folder-open:before{content:'\79'}.fm-home:before{content:'\7a'}.fm-search:before{content:'\7b'}

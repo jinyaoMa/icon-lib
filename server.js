@@ -1,7 +1,7 @@
 var http = require('http')
 var fs = require('fs')
 
-var TARGET_TEST_HTML_FILE = './build/index.html'; // 修改测试目标
+var TARGET_TEST_HTML_FILE = './docs/index.html'; // 修改测试目标
 
 http.createServer().on('request', function (req, res) {
   try {
@@ -16,7 +16,7 @@ http.createServer().on('request', function (req, res) {
         }
       })
     } else if (req.url.includes('font-mustom')) {
-      fs.readFile('./build' + req.url, function (err, data) {
+      fs.readFile('./docs' + req.url, function (err, data) {
         if (err) {
           res.end('ERROR')
         } else {

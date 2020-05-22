@@ -1,7 +1,20 @@
 let fontCarrier = require('font-carrier');
 let fs = require('fs');
 
-let font = fontCarrier.create();
+const len = 1024;
+
+const font = fontCarrier.create({
+  id: 'font-mustom',
+  horizAdvX: len,
+  vertAdvY: len
+});
+
+font.setFontface({
+  fontFamily: 'Font Mustom',
+  unitsPerEm: len,
+  ascent: 0.8 * len,
+  descent: -0.2 * len
+});
 
 const svgPath = './src/svg/';
 
@@ -37,7 +50,7 @@ fs.readdir(svgPath, (err, files) => {
       let className = prefix + file.replace('.svg', '');
       font.setSvg(`&#x${num};`, svg);
       css += `.${className}:before{content:'\\${num}'}`;
-      htmlTemp += `<div class="icon"><i class="${fontFamilyClass} ${className}"></i><span>${className}</span></div>`;
+      htmlTemp += `<div class="icon"><i class="${fontFamilyClass} ${className} ${fontFamilyClass}-fh"></i><span>${className}</span></div>`;
     }
   });
 
