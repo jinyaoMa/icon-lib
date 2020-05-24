@@ -22,4 +22,4 @@
   height: 1.25em;
   line-height: 1.25em;
 }
-.fm-bars:before{content:'\78'}.fm-folder-open:before{content:'\79'}.fm-home:before{content:'\7a'}.fm-search:before{content:'\7b'}
+.fm-archive:before{content:'\78'}.fm-bars:before{content:'\79'}.fm-envelope:before{content:'\7a'}.fm-folder-open:before{content:'\7b'}.fm-home:before{content:'\7c'}.fm-search:before{content:'\7d'}.fm-sitemap:before{content:'\7e'}.fm-tag:before{content:'\7f'}.fm-tags:before{content:'\80'}.fm-user:before{content:'\81'}
