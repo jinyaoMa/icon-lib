@@ -17,9 +17,13 @@
   text-rendering: auto;
   line-height: 1;
 }
-.fm-fh {
-  width: 1.25em;
-  height: 1.25em;
-  line-height: 1.25em;
+.fm-sq {
+  width: 1em;
+  height: 1em;
+  text-align: center;
+}
+.fm-sq:before {
+  display: inline-block;
+  transform: translate3d(-0.125em, 0, 0);
 }
 .fm-archive:before{content:'\78'}.fm-bars:before{content:'\79'}.fm-envelope:before{content:'\7a'}.fm-folder-open:before{content:'\7b'}.fm-home:before{content:'\7c'}.fm-search:before{content:'\7d'}.fm-sitemap:before{content:'\7e'}.fm-tag:before{content:'\7f'}.fm-tags:before{content:'\80'}.fm-user:before{content:'\81'}
